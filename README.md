@@ -194,34 +194,6 @@ All data is stored in `db.json`:
 - **Data Table**: User-friendly parking data view
 - Privacy: Can't see other residents' phone numbers
 
-## Customization
-
-### Adding More Towers
-Edit `src/components/AdminApp.jsx` and `src/utils/parkingLogic.js` to add more towers beyond A-H.
-
-### Changing Distance Thresholds
-Modify the `getTowerDistance()` function in `src/utils/parkingLogic.js`.
-
-### Styling
-The project uses Tailwind CSS with custom color scheme defined in `tailwind.config.js`.
-
-## Development
-
-### Running Tests
-```bash
-npm run test
-```
-
-### Building for Production
-```bash
-npm run build
-```
-
-### Preview Production Build
-```bash
-npm run preview
-```
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps:

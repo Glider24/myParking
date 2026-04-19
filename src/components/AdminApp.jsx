@@ -3,7 +3,7 @@ import { useParking } from '../hooks/useParking'
 import Header from './Header'
 import AddSlotForm from './AddSlotForm'
 
-const API = 'https://myparking-backend-p4nn.onrender.com/api'
+const API = import.meta.env.VITE_API_URL
 
 export default function AdminApp({ user, onLogout }) {
   const { slots, addSlot, deleteSlot, updateSlot } = useParking()

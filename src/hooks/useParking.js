@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { ParkVehicle, sortSlots, isSlotNumberTaken } from '../utils/parkingLogic'
 
-const API = 'https://myparking-backend-p4nn.onrender.com/api/slots'
+const API = `${import.meta.env.VITE_API_URL}/slots`
 
 export function useParking() {
   const [slots, setSlots] = useState([])

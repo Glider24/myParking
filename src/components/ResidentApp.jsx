@@ -14,7 +14,7 @@ export default function ResidentApp({ user, onLogout }) {
   const mySlots = slots.filter(s => s.isOccupied && s.occupiedBy?.id === user.id)
 
   const freeMySlot = async (slotId) => {
-    await fetch(`http://localhost:3001/api/slots/${slotId}`, {
+    await fetch(`https://myparking-backend-p4nn.onrender.com/api/slots/${slotId}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ isOccupied: false, occupiedBy: null }),

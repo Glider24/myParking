@@ -3,7 +3,7 @@ import { useParking } from '../hooks/useParking'
 import Header from './Header'
 import AddSlotForm from './AddSlotForm'
 
-const API = 'http://localhost:3001/api'
+const API = 'https://myparking-backend-p4nn.onrender.com/api'
 
 export default function AdminApp({ user, onLogout }) {
   const { slots, addSlot, deleteSlot, updateSlot } = useParking()

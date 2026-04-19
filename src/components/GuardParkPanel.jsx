@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ParkVehicle, sortSlots } from '../utils/parkingLogic'
 
-const API = 'http://localhost:3001/api'
+const API = 'https://myparking-backend-p4nn.onrender.com/api'
 
 function ToggleCard({ checked, onChange, icon, title, description, type }) {
   const activeStyles = { ev: 'border-parking-amber/50 bg-parking-amberDim/40', cover: 'border-parking-purple/50 bg-parking-purpleDim/40' }

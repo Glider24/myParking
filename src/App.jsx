@@ -11,7 +11,7 @@ export default function App() {
   // Fetch slots just for the login page stats — lightweight, no hook
   useEffect(() => {
     if (!user) {
-      fetch('http://localhost:3001/api/slots')
+      fetch('https://myparking-backend-p4nn.onrender.com/api/slots')
         .then(r => r.json())
         .then(setSlots)
         .catch(() => {})

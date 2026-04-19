@@ -63,17 +63,26 @@ cd myParking
 npm install
 ```
 
-3. Start the backend server
+3. Create `.env` file in the root directory
+```bash
+# For local development
+VITE_API_URL=http://localhost:3001/api
+
+# For production deployment (Vercel/Netlify)
+# VITE_API_URL=https://your-backend-url.com/api
+```
+
+4. Start the backend server
 ```bash
 npm run server
 ```
 
-4. Start the frontend (in a new terminal)
+5. Start the frontend (in a new terminal)
 ```bash
 npm run dev
 ```
 
-5. Open your browser at `http://localhost:5173`
+6. Open your browser at `http://localhost:5173`
 
 ## Default Credentials
 
